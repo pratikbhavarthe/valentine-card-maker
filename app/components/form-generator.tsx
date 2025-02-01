@@ -7,9 +7,9 @@ import { MemeType } from "../types/globals";
 import { cn } from "../../lib/utils";
 
 const MemeTypeOptions: { name: string; type: MemeType }[] = [
-  { name: 'Cat 01', type: 'cat-01.jpeg' },
-  { name: 'Cat 02', type: 'cat-02.webp' },
-  { name: 'Cat 03', type: 'cat-03.webp' },
+  { name: 'Cat1', type: 'cat1.jpg' },
+  { name: 'Cat2', type: 'cat2.jpg' },
+  { name: 'Cat3', type: 'cat3.jpg' },
 ]
 
 const GreetingOptions = [

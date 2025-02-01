@@ -1,7 +1,7 @@
 export type MemeType =
-  | "cat-01.jpeg"
-  | "cat-02.webp"
-  | "cat-03.webp";
+  | "cat1.jpg"
+  | "cat2.jpg"
+  | "cat3.jpg";
 
 export type TemplateType = {
   to: string;

@@ -9,7 +9,7 @@ export type TemplateContainerType = {
 export const INITIAL_TEMPLATE_DATA: TemplateType = {
   to: "",
   message: "",
-  meme: "cat-01.jpeg"
+  meme: "cat1.jpg"
 }
 
 export const TemplateContainer = createContext<TemplateContainerType>({
