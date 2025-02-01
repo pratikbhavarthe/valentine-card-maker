@@ -1,7 +1,7 @@
 import { TemplateType } from "../types/globals";
 import { createContext } from "react";
 
-export type TemplateProviderType = {
+export type TemplateContainerType = {
   template: TemplateType;
   setTemplate: (template: TemplateType) => void;
 }
@@ -12,7 +12,7 @@ export const INITIAL_TEMPLATE_DATA: TemplateType = {
   meme: "cat-01.jpeg"
 }
 
-export const TemplateProvider = createContext<TemplateProviderType>({
+export const TemplateContainer = createContext<TemplateContainerType>({
   template: INITIAL_TEMPLATE_DATA,
   setTemplate: () => { }
 });
