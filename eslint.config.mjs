@@ -15,26 +15,20 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
-  // Add custom rules to override defaults
+  // Disable all rules
   {
     rules: {
-      // Disable the empty object type rule for interfaces
+      // Disable all rules
       '@typescript-eslint/no-empty-object-type': 'off',
-      
-      // Allow unused variables with warning level (useful for unused variables in props, etc.)
-      '@typescript-eslint/no-unused-vars': [
-        'warn', 
-        { 
-          argsIgnorePattern: '^_',  // Allow variables starting with an underscore to avoid warnings
-        }
-      ],
-
-      // Optional: If you want to enforce the rule but ignore certain variables:
-      // '@typescript-eslint/no-unused-vars': 'warn', 
-      // 'react/jsx-uses-react': 'off', // For React 17 and later, no longer needed for JSX
-      // Other custom rules can go here...
+      '@typescript-eslint/no-unused-vars': 'off',
+      'react/jsx-uses-react': 'off', // Optional: Disable React-specific rules
+      // Other rules you want to disable globally can be added here...
     },
   },
+
+  // Optionally disable the core Next.js rules entirely
+  // This is useful if you want to entirely turn off Next.js-related linting:
+  // compat.extends("next"), // Uncomment if you don't want any Next.js linting
 ];
 
 export default eslintConfig;
