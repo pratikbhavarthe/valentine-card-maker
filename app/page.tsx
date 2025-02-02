@@ -12,11 +12,11 @@ export default function HomePage() {
       <Wrapper>
         <header className="flex flex-row items-center justify-between max-lg:flex-col max-lg:items-end">
           <h1 className="leading-snug tracking-tighter font-bold text-3xl">
-            {"Valentine Card Generator 🩷"}
+            {"Valentine Card Maker 💗"}
           </h1>
-          <Link href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Make a valentine meme for your loved one using https://valentine-meme-generator.vercel.app/")}`}>
+          <Link href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Make a valentine meme for your loved one using https://valentine-card-maker.vercel.app/")}`}>
             <Button variant="gloss">
-              {"Share on Twitter/X"}
+              {"Share on X"}
             </Button>
           </Link>
         </header>
